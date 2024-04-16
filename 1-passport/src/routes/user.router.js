@@ -3,7 +3,7 @@ const validationUser = require("../middlewares/user.middleware");
 const userService = require("../service/user.service");
 const { isValidatePassword } = require("../utils/index");
 const passport = require("passport");
-isValidatePassword;
+//isValidatePassword;
 const router = express.Router();
 
 router.post(

@@ -27,9 +27,10 @@ app.set("views", pathView);
 
 app.use(
   session({
-    secret: "batatinha123",
-  })
-);
+  secret: "batatinha123",
+}) 
+); 
+
 initializePassport();
 app.use(passport.initialize());
 app.use(passport.session());
@@ -42,7 +43,7 @@ app.use("/user", userRouter);
 
 mongoose
   .connect(
-    "mongodb+srv://marianamohr:c9zKW4F8Vadmdn5d@cluster0.zm7bida.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    "mongodb+srv://lucascostabile23:Teste23teste@cluster0.nxhyfcm.mongodb.net/Login?retryWrites=true&w=majority"
   )
   .catch((err) => {
     console.log(err);
